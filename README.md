@@ -1,5 +1,7 @@
 # End-to-End Data Transformation and Analytical Modeling in SAP Datasphere
 
+![](images/gif_title.gif)
+
 # Project Overview
 
 This project demonstrates how to integrate a dataset into SAP Datasphere, perform data transformations using Python scripts, and prepare the data for consumption in SAP Analytics Cloud (SAC). Below are the steps and processes followed in this project.
