@@ -20,6 +20,8 @@ This project demonstrates how to integrate a dataset into SAP Datasphere, perfor
 - Add the imported table as the source of the Data Flow.
 - Duplicate the source table to create a second local table and deploy the new table.
 
+![Data Flow](images/data_flow.png)
+
 ## Step 3: Adding Additional Columns for Calculations
 
 To enable advanced reporting in SAC, additional columns were added to both tables:
@@ -28,7 +30,11 @@ To enable advanced reporting in SAC, additional columns were added to both table
 - DiscountAmount
 - ShippingCostPerUnit
 
+![Data Flow](images/add_columns.png)
+
 ### 3.1 Python Script for Transformations
+
+![Python script](images/python_script.png)
 
 The following Python script was used in the Data Flow to calculate the additional columns:
 
@@ -69,6 +75,8 @@ def transform(data):
 
 ## Step 4: Creating a Graphical View
 
+![Graphical View](images/graphical_view.png)
+
 - Create a Graphical View (Fact) based on the transformed dataset.
 - Define the following:
     - Measures: Include numerical columns such as Profit, TotalRevenue, DiscountAmount, etc.
@@ -76,6 +84,8 @@ def transform(data):
     - Associate a Time Table Dimension to enable hierarchical time-based reporting.
 
 ## Step 5: Creating the Analytical Model
+
+![Analytical Model](images/analytical_model.png)
 
 - Create an Analytical Model using the Graphical View (Fact table) as the source.
 - Configure the model to expose the data for consumption.
