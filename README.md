@@ -1,4 +1,4 @@
-# SAP-Datasphere-and-SAP-SAC-Project
+# End-to-End Data Transformation and Analytical Modeling in SAP Datasphere
 
 # Project Overview
 
@@ -8,7 +8,8 @@ This project demonstrates how to integrate a dataset into SAP Datasphere, perfor
 
 - Import the provided dataset (online_sales_dataset.csv) into SAP Datasphere.
 - Create a local table (relational dataset) based on the imported file.
-- Note: Ensure the table structure matches the dataset schema. Make any necessary transformations in the dataset, ensure the data types are correctly matched and that the full dataset is valid
+- Note: Ensure the table structure matches the dataset schema. Make any necessary transformations in the dataset, ensure the data types are correctly matched and that the full dataset is valid.
+
 ![Importing Process](images/dataset_import.png)
 
 ## Step 2: Data Flow Creation
@@ -29,6 +30,7 @@ To enable advanced reporting in SAC, additional columns were added to both table
 
 The following Python script was used in the Data Flow to calculate the additional columns:
 
+```python
 def transform(data):
     # Convert input data to DataFrame
     df = data.copy()  # Ensures not modifying the original data in-place
@@ -55,6 +57,7 @@ def transform(data):
     df['ShippingCostPerUnit'] = df['ShippingCostPerUnit'].replace([float('inf'), -float('inf')], 0)  # Handle division by 0
 
     return df
+```
 
 ### 3.2 Running the Data Flow
 
