@@ -24,23 +24,24 @@ This project demonstrates a complete end-to-end data analytics workflow, integra
 - Objective: Establish a Data Flow to enable seamless data transformations and create a transformed target table.
 
 - Process:
-    1. Use the imported table as the source in the Data Flow.
-    2. Create the script in the data flow and add the additional columns.
 
-    ### New Columns Added
+1. Use the imported table as the source in the Data Flow.
+2. Create the script in the data flow and add the additional columns.
 
-    - Profit: Represents the total earnings after discounts and shipping costs. This metric is crucial for understanding financial performance.
-    - TotalRevenue: Captures total sales revenue before any deductions, providing insight into gross earnings.
-    - DiscountAmount: Highlights the absolute value of discounts applied, offering transparency into pricing strategies.
-    - ShippingCostPerUnit: Facilitates per-unit cost analysis for logistics efficiency.
+### New Columns Added
 
-    3. Create and deploy the target table.
+- Profit: Represents the total earnings after discounts and shipping costs. This metric is crucial for understanding financial performance.
+- TotalRevenue: Captures total sales revenue before any deductions, providing insight into gross earnings.
+- DiscountAmount: Highlights the absolute value of discounts applied, offering transparency into pricing strategies.
+- ShippingCostPerUnit: Facilitates per-unit cost analysis for logistics efficiency.
+
+3. Create and deploy the target table.
 
 - Outcome: A transformed table prepared for advanced calculations and analysis.
 
 ![Data Flow](images/data_flow.png)
 
-### 3.1 Python Script for Transformations
+## Step 3: Python Script for Transformations
 
 ![Python script](images/python_script.png)
 
@@ -75,7 +76,7 @@ def transform(data):
     return df
 ```
 
-### 3.2 Running the Data Flow
+### 3.1 Running the Data Flow
 
 - Execute the Data Flow and monitor its status in the Data Flow Monitor.
 - Ensure all mappings and column names are correct to avoid errors.
@@ -101,6 +102,16 @@ def transform(data):
     2. Configure measures and dimensions as required by the reporting needs.
     3. Enable the model for data preview to validate the transformations.
 - Outcome: An Analytical Model configured for seamless integration with SAC
+
+## 6. Overview Datasphere
+
+1. Import the Dataset
+2. Create the Data Flow and Target table
+3. Python script 
+4. Create a Graphical View
+5. Create an Analytical Model and expose for consumption
+
+![Overview Datasphere](images/overview_datasphere.png)
 
 ## To Be Continued: Steps in SAC (Work in Progress)
 
