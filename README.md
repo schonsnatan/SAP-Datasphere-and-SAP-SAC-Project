@@ -22,26 +22,23 @@ This project demonstrates a complete end-to-end data analytics workflow, integra
 ## Step 2: Data Flow Creation
 
 - Objective: Establish a Data Flow to enable seamless data transformations and create a transformed target table.
+
 - Process:
     1. Use the imported table as the source in the Data Flow.
-    2. Duplicate the source table to create a target table.
-    3. Configure transformation logic to refine the data.
+    2. Create the script in the data flow and add the additional columns.
+
+    ### New Columns Added
+
+    - Profit: Represents the total earnings after discounts and shipping costs. This metric is crucial for understanding financial performance.
+    - TotalRevenue: Captures total sales revenue before any deductions, providing insight into gross earnings.
+    - DiscountAmount: Highlights the absolute value of discounts applied, offering transparency into pricing strategies.
+    - ShippingCostPerUnit: Facilitates per-unit cost analysis for logistics efficiency.
+
+    3. Create and deploy the target table.
+
 - Outcome: A transformed table prepared for advanced calculations and analysis.
 
 ![Data Flow](images/data_flow.png)
-
-## Step 3: Adding Additional Columns for Calculations
-
-To enhance reporting and enable advanced analysis in SAC, additional calculated columns were added:
-
-### New Columns Added
-
-1. Profit: Represents the total earnings after discounts and shipping costs. This metric is crucial for understanding financial performance.
-2. TotalRevenue: Captures total sales revenue before any deductions, providing insight into gross earnings.
-3. DiscountAmount: Highlights the absolute value of discounts applied, offering transparency into pricing strategies.
-4. ShippingCostPerUnit: Facilitates per-unit cost analysis for logistics efficiency.
-
-![Data Flow](images/add_columns.png)
 
 ### 3.1 Python Script for Transformations
 
