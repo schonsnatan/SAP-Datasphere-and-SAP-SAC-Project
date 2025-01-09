@@ -125,7 +125,7 @@ The SAP Analytics Cloud (SAC) dashboard is designed to provide comprehensive ins
 
 ![SAC Report](images/SAC-Report.png)
 
-### Key Features in the Report:
+## Key Features in the Report:
 
 1. Profit Analysis by Country:
 
