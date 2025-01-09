@@ -1,6 +1,4 @@
 def transform(data):
-    # Convert input data to DataFrame
-    df = data.copy()  # Ensures not modifying the original data in-place
 
     # Handle missing values
     df['Quantity'] = df['Quantity'].fillna(0)
