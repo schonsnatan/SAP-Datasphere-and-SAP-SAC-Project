@@ -9,7 +9,7 @@ This project demonstrates a complete end-to-end data analytics workflow, integra
 ## Step 1: Importing the Dataset
 
 - Dataset: online_sales_dataset.csv
-    - Represents online sales data with attributes like Quantity, UnitPrice, Discount, ShippingCost, OrderPriority, and more.
+    - Represents online sales data with attributes like Quantity, UnitPrice, Discount, ShippingCost, OrderPriority, and more. (https://www.kaggle.com/datasets/yusufdelikkaya/online-sales-dataset/data) 
 - Actions:
     1. Import the dataset into SAP Datasphere as a local table.
     2. Validate the table structure to match the dataset schema.
