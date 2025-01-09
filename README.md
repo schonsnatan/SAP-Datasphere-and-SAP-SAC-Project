@@ -123,7 +123,7 @@ def transform(data):
 
 The SAP Analytics Cloud (SAC) dashboard is designed to provide comprehensive insights into sales performance, operational efficiency, and customer behavior. The following features have been implemented to ensure a data-driven decision-making process:
 
-![Overview Datasphere](images/SAC-Report.png)
+![SAC Report](images/SAC-Report.png)
 
 ### Key Features in the Report:
 
