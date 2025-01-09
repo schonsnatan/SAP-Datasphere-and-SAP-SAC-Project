@@ -21,8 +21,4 @@ def transform(data):
     data['ShippingCostPerUnit'] = data['ShippingCost'] / data['Quantity']
     data['ShippingCostPerUnit'] = data['ShippingCostPerUnit'].replace([float('inf'), -float('inf')], 0)  # Handle division by 0
 
-<<<<<<< HEAD
     return data
-=======
-    return df
->>>>>>> 5aadfffea687366175b425958b0028953d895f3f
