@@ -172,19 +172,6 @@ The SAP Analytics Cloud (SAC) dashboard is designed to provide comprehensive ins
     - Visualization: A pie or bar chart breaking down revenue by payment methods (e.g., Bank Transfer, PayPal, Credit Card).
     - Purpose: Analyze customer payment preferences to enhance checkout processes and payment options.
 
-## End-to-End Integration
-
-This project demonstrates the seamless integration between SAP Datasphere and SAP Analytics Cloud:
-
-1. SAP Datasphere:
-
-    - Handles data ingestion, transformation, and modeling.
-    - Python scripts allow for advanced transformations like Profit and DiscountAmount calculations.
-
-2. SAP Analytics Cloud (SAC):
-
-    - Provides a platform for consuming the transformed data and presenting it through interactive dashboards.
-
 ## Filters for the Report:
 
 - Available Filters:
@@ -208,3 +195,16 @@ This dashboard bridges the gap between raw data and actionable insights. Key adv
 2. Customer Insights: Analyze payment methods and sales channels to improve customer satisfaction and sales strategies.
 3. Operational Efficiency: Use KPIs and priority-based insights to enhance operational decision-making.
 4. Strategic Planning: Leverage time-based trends for forecasting and aligning business goals with observed patterns.
+
+## End-to-End Integration
+
+This project demonstrates the seamless integration between SAP Datasphere and SAP Analytics Cloud:
+
+1. SAP Datasphere:
+
+    - Handles data ingestion, transformation, and modeling.
+    - Python scripts allow for advanced transformations like Profit and DiscountAmount calculations.
+
+2. SAP Analytics Cloud (SAC):
+
+    - Provides a platform for consuming the transformed data and presenting it through interactive dashboards.
