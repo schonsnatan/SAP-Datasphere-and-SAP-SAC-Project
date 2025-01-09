@@ -113,9 +113,98 @@ def transform(data):
 
 ![Overview Datasphere](images/overview_datasphere.png)
 
-## To Be Continued: Steps in SAC (Work in Progress)
+## Step 7: Importing the Analytical Model into SAP Analytics Cloud (SAC)
 
-- The next steps involve:
-- Importing the Analytical Model into SAP Analytics Cloud (SAC).
-- Building dashboards and reports using the prepared data. (including predcitive analysis)
+- Objective: Leverage the prepared Analytical Model from SAP Datasphere in SAC to create interactive dashboards and visualizations.
+- Process:
+    1. Connect SAC to Datasphere: Create or use an existing connection to the Datasphere Tenant. Follow SAP Help Documentation to establish the connection
 
+## Step 8: Building the Report and Dashboard in SAC
+
+The SAP Analytics Cloud (SAC) dashboard is designed to provide comprehensive insights into sales performance, operational efficiency, and customer behavior. The following features have been implemented to ensure a data-driven decision-making process:
+
+![Overview Datasphere](images/SAC-Report.png)
+
+### Key Features in the Report:
+
+1. Profit Analysis by Country:
+
+    - Visualization: A bar chart showcasing profits by country.
+    - Purpose: Identify top-performing regions (e.g., France, the US, Belgium) to guide resource allocation and strategy development.
+
+2. Revenue by Category:
+
+    - Visualization: Vertical bar charts splitting revenue across product categories like Apparel, Furniture, and Accessories.
+    - Purpose: Understand category-level performance to optimize inventory and marketing efforts.
+
+3. Revenue per Sales and Shipment Provider:
+
+    - Visualization: A combination of bar and column charts breaking down revenue by:
+        - Sales Channel: Online vs. in-store.
+        - Shipment Providers: DHL, FedEx, UPS, and Royal Mail.
+    - Purpose: Evaluate the efficiency and contribution of sales and logistics channels.
+
+4. Time-Based Trends:
+
+    - Visualization: Line charts showing revenue trends over time.
+    - Feature: Includes a reference line indicating the average revenue value across the entire timeline.
+    - Purpose: 
+        - Observe seasonality, identify growth patterns, and forecast future performance.
+        - Identify periods where revenue exceeds or falls below the average, enabling quick identification of anomalies or high-performing periods.
+
+5. Operational Insights:
+
+    - Visualization: Key Performance Indicators (KPIs) for:
+        - Total Profit.
+        - Total Revenue.
+        - Discount Amount.
+        - Quantity sold.
+    - Additional Insight: Priority-based visualizations to analyze order handling and efficiency.
+    - Purpose: Offer a quick overview of critical business metrics for operational decision-making.
+
+6. Quantity per Warehouse Location:
+
+    - Visualization: A tree map to highlight the quantity of products stored or shipped from different warehouse locations.
+    - Purpose: Optimize warehouse management by identifying stock levels and potential bottlenecks.
+
+7. Payment Method Analysis:
+
+    - Visualization: A pie or bar chart breaking down revenue by payment methods (e.g., Bank Transfer, PayPal, Credit Card).
+    - Purpose: Analyze customer payment preferences to enhance checkout processes and payment options.
+
+## End-to-End Integration
+
+This project demonstrates the seamless integration between SAP Datasphere and SAP Analytics Cloud:
+
+1. SAP Datasphere:
+
+    - Handles data ingestion, transformation, and modeling.
+    - Python scripts allow for advanced transformations like Profit and DiscountAmount calculations.
+
+2. SAP Analytics Cloud (SAC):
+
+    - Provides a platform for consuming the transformed data and presenting it through interactive dashboards.
+
+## Filters for the Report:
+
+- Available Filters:
+    - Country: Narrow down the analysis to specific regions to focus on local performance.
+    - Invoice Date: Filter the data by specific timeframes to identify trends or seasonality.
+    - Warehouse Location: Focus on performance metrics by individual operational centers.
+
+- Functionality:
+    - These filters apply to the entire report, dynamically updating all visualizations and KPIs, including charts for Profit Analysis by Country, Revenue by Category, Quantity per Warehouse Location, and Time-Based Trends.
+    - Users can easily adjust filters to explore data across multiple dimensions or combinations, ensuring maximum flexibility for targeted analysis.
+
+- Purpose:
+    - Enhance user interactivity by enabling custom views tailored to specific business questions.
+    - Improve decision-making by allowing granular exploration of data subsets.
+
+## Value of the Dashboard
+
+This dashboard bridges the gap between raw data and actionable insights. Key advantages include:
+
+1. Profitability Analysis: Recognize top-performing regions and categories to focus resources effectively.
+2. Customer Insights: Analyze payment methods and sales channels to improve customer satisfaction and sales strategies.
+3. Operational Efficiency: Use KPIs and priority-based insights to enhance operational decision-making.
+4. Strategic Planning: Leverage time-based trends for forecasting and aligning business goals with observed patterns.
