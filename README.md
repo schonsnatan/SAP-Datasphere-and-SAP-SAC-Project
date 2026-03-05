@@ -1,4 +1,4 @@
-# End-to-End Data Analytics: From SAP Datasphere Transformation to Predictive Insights in SAC
+# End-to-End Data Analytics from SAP Datasphere Transformation to Predictive Insights in SAC
 
 ![](images/gif_title.gif)
 
